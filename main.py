@@ -16,7 +16,7 @@ def fetch_bgp_sessions(router_ip, username, password):
             print(f"Name: {session.get('name', 'N/A')}")
             print(f"Remote ID: {session.get('remote.id', 'N/A')}")
             print(f"Uptime: {session.get('uptime', 'N/A')}")
-            print(f"Established: {session.get('state', 'N/A')}")
+            print(f"Established: {session.get('established', 'N/A')}")
             print("-" * 30)
     else:
         print(f"Error connecting to {router_ip}: HTTP {response.status_code}")
